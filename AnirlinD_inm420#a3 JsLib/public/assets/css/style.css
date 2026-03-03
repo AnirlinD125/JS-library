@@ -1,0 +1,206 @@
+/* main body */
+body {
+  background-color: rgb(31, 31, 31);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.glide {
+  height: 100%;
+}
+
+.glide__track,
+.glide__slides,
+.glide__slide {
+  height: 100%;
+}
+
+.glide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.glide__arrows {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.glide__arrow {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: 0.3s ease;
+}
+
+.glide__arrow:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* main section */
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: rgb(242, 242, 242);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 60px;
+}
+
+p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+  justify-content: left;
+  color: rgb(242, 242, 242);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.scroll {
+  color: #626262;
+  text-align: center;
+}
+
+/* price */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 100px 10%;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+/* price card */
+.plan {
+  background: rgb(132, 132, 132);
+  padding: 40px;
+  width: 320px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.plan h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.plan h3 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.plan p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
+  color: #333232;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.plan ul li {
+  margin: 10px 0;
+}
+
+/*price button*/
+.plan button {
+  padding: 12px 25px;
+  border: none;
+  background: #000000;
+  color: white;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.plan button:hover {
+  background: #5d5d5d;
+}
+
+/* text animation */
+*[data-murphy] {
+  opacity: 0;
+}
+
+/* small gallery web only */
+.gallery {
+  display: none;
+}
+
+/* web responsive */
+@media (min-width: 768px) {
+  .hero {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  p {
+    padding-left: 20px;
+    width: 50%;
+  }
+
+  .scroll {
+    width: 100%;
+    text-align: center;
+  }
+
+  .desc {
+  padding-left: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+  /* Right side gallery */
+  .gallery {
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    width: 35%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  main {
+    position: relative;
+  }
+}

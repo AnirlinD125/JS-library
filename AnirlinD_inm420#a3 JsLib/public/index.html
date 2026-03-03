@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- cursor link -->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <!-- cursor js -->
+    <script src="https://unpkg.com/kursor"></script>
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" defer></script>
+    <!-- subs roll css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- subs roll js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <!-- text anima -->
+    <script src="https://unpkg.com/murphyjs@2.5.1/dist/index.js"></script>
+    <!-- js link -->
+    <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+        <!-- glide hero -->
+        <section class="hero">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="./assets/images/japan1.jpg" alt="Slide 1">
+                        </li>
+
+                        <li class="glide__slide">
+                            <img src="./assets/images/japan2.webp" alt="Slide 2">
+                        </li>
+
+                        <li class="glide__slide">
+                            <img src="./assets/images/japan3.jpeg" alt="Slide 3">
+                        </li>
+                    </ul>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> < </button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> > </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <main>
+            <!-- text -->
+            <div data-murphy="left-to-right" data-murphy-animation-delay="300">
+                <h1>Travel to Japan</h1>
+                <p>Welcome to our Japan travel company — your gateway to discovering the beauty, culture, and spirit of
+                    Japan. From the vibrant streets of Tokyo to the timeless temples of Kyoto and the breathtaking views of
+                    Mount Fuji, we create unforgettable journeys tailored just for you.With expert local guides, carefully
+                    curated experiences, and seamless planning, we help you explore Japan’s rich traditions, modern wonders,
+                    and hidden gems with comfort and confidence. Let us turn your dream trip to Japan into a
+                    once-in-a-lifetime adventure.</p>
+            </div>
+            <div data-murphy="top-to-bottom" data-murphy-animation-delay="400">
+                <p class="scroll">Scroll down to see price</p>
+            </div>
+            <!-- web gallery -->
+            <div class="gallery">
+                <a href="./assets/images/japan2.webp" data-lightbox="roadtrip"> <img src="./assets/images/japan2.webp"></a>
+                <a href="./assets/images/japan3.jpeg" data-lightbox="roadtrip"><img src="./assets/images/japan3.jpeg"></a>
+            </div>
+            <!-- price sec -->
+            <section class="pricing">
+
+                <div class="plan" data-aos="flip-up">
+                    <h2>Beginner Plan</h2>
+                    <h3>$499</h3>
+                    <p class="desc">For beginner travelers</p>
+
+                    <ul>
+                        <li>3 Days / 2 Nights</li>
+                        <li>3★ Hotel Stay</li>
+                        <li>City Tour Included</li>
+                        <li>Airport Pickup</li>
+                    </ul>
+
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="plan" data-aos="flip-down">
+                    <h2>Advanced Plan</h2>
+                    <h3>$899</h3>
+                    <p class="desc">For full Japan experience</p>
+
+                    <ul>
+                        <li>10 Days / 9 Nights</li>
+                        <li>4★ Hotel Stay</li>
+                        <li>Mount Fuji Tour</li>
+                        <li>Airport Transfer</li>
+                    </ul>
+
+                    <button>Choose Plan</button>
+                </div>
+            </section>
+        </main>
+</body>
+</html> 
